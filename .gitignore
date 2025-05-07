@@ -1,0 +1,7 @@
+# Ignore unnecessary files
+.DS_Store
+
+# Ignore raw data formats just in case
+*.csv
+*.xlsx
+*.zip
