@@ -1,0 +1,2260 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Electric Vehicle and Charger Counts By Year Extract' inline='true' name='federated.04c9txa0l5j7da1c6dvve0j8mfgt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Electric Vehicle and Charger Counts By Year' name='hyper.17m2qmb0wstpd71e5tmp007bgvd5'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/Dani/Downloads/Electric Vehicle and Charger Counts By Year.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.17m2qmb0wstpd71e5tmp007bgvd5' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>18</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_6D3F289E7C1A41A4B395AFD315F8506B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZIP Code]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ZIP Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>606</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_6D3F289E7C1A41A4B395AFD315F8506B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Battery Electric Vehicle (BEV)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Battery Electric Vehicle (BEV)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Battery Electric Vehicle (BEV)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>254</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_6D3F289E7C1A41A4B395AFD315F8506B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plug-in Hybrid Electric Vehicle (PHEV)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Plug-in Hybrid Electric Vehicle (PHEV)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Plug-in Hybrid Electric Vehicle (PHEV)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>92</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_6D3F289E7C1A41A4B395AFD315F8506B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EV Level1 EVSE Num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EV Level1 EVSE Num]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EV Level1 EVSE Num</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_6D3F289E7C1A41A4B395AFD315F8506B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EV Level2 EVSE Num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EV Level2 EVSE Num]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EV Level2 EVSE Num</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_6D3F289E7C1A41A4B395AFD315F8506B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EV DC Fast Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EV DC Fast Count]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EV DC Fast Count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>16</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_6D3F289E7C1A41A4B395AFD315F8506B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='TOTAL Charging stations (level 2+Fast count)' datatype='integer' name='[Calculation_1676113185221160960]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[EV Level2 EVSE Num]+[EV DC Fast Count]' />
+      </column>
+      <column caption='EVS per Charger ' datatype='real' name='[Calculation_1676113185224749057]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Battery Electric Vehicle (BEV)]/ ([Calculation_1676113185221160960]+1)' />
+      </column>
+      <column datatype='string' name='[ZIP Code (group)]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
+        <calculation class='categorical-bin' column='[ZIP Code]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;98101, 98102, 98103 and 29 more&quot;'>
+            <value>&quot;98101&quot;</value>
+            <value>&quot;98102&quot;</value>
+            <value>&quot;98103&quot;</value>
+            <value>&quot;98104&quot;</value>
+            <value>&quot;98105&quot;</value>
+            <value>&quot;98106&quot;</value>
+            <value>&quot;98107&quot;</value>
+            <value>&quot;98108&quot;</value>
+            <value>&quot;98109&quot;</value>
+            <value>&quot;98112&quot;</value>
+            <value>&quot;98113&quot;</value>
+            <value>&quot;98114&quot;</value>
+            <value>&quot;98115&quot;</value>
+            <value>&quot;98116&quot;</value>
+            <value>&quot;98117&quot;</value>
+            <value>&quot;98118&quot;</value>
+            <value>&quot;98119&quot;</value>
+            <value>&quot;98121&quot;</value>
+            <value>&quot;98122&quot;</value>
+            <value>&quot;98124&quot;</value>
+            <value>&quot;98125&quot;</value>
+            <value>&quot;98126&quot;</value>
+            <value>&quot;98133&quot;</value>
+            <value>&quot;98134&quot;</value>
+            <value>&quot;98136&quot;</value>
+            <value>&quot;98144&quot;</value>
+            <value>&quot;98154&quot;</value>
+            <value>&quot;98164&quot;</value>
+            <value>&quot;98177&quot;</value>
+            <value>&quot;98191&quot;</value>
+            <value>&quot;98195&quot;</value>
+            <value>&quot;98199&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[ZIP Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_6D3F289E7C1A41A4B395AFD315F8506B]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[ZIP Code (group)]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;98108&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;98030&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;98101, 98102, 98103 and 29 more&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;98103&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;98102&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;98133&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;98107&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;98105&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;98177&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;98101&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;98114&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;98040&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;98125&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;98106&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_6D3F289E7C1A41A4B395AFD315F8506B'>
+            <properties context=''>
+              <relation connection='hyper.17m2qmb0wstpd71e5tmp007bgvd5' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Electric Vehicle Population 20240412 Extract' inline='true' name='federated.1o2zlpp1heetjk1bnmypu11yubth' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Electric Vehicle Population 20240412' name='hyper.0963ira1r4vfoc15yc5ws1mpd7qc'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/Dani/Downloads/Electric Vehicle Population 20240412.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.0963ira1r4vfoc15yc5ws1mpd7qc' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>VIN (1-10)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VIN (1-10)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>VIN (1-10)</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>17273</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>65</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>697</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1018</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model Year]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Model Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>15</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Make</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Make]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Make</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>84</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>397</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Vehicle Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Electric Vehicle Type]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Electric Vehicle Type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Clean Alternative Fuel Vehicle (CAFV) Eligibility]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Electric Range]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Electric Range</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>258</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Base MSRP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Base MSRP]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Base MSRP</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>56</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Legislative District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Legislative District]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Legislative District</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>49</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOL Vehicle ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DOL Vehicle ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DOL Vehicle ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>235198</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1006</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1006</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Utility</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Electric Utility]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Electric Utility</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>34</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 Census Tract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[2020 Census Tract]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>2020 Census Tract</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6765</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Count' datatype='integer' name='[Calculation_6986631134742958080]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(1)' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Vin (1-10)' datatype='string' name='[VIN (1-10)]' role='dimension' type='nominal' />
+      <column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194]' role='measure' type='quantitative' />
+      <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Electric Vehicle Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Battery Electric Vehicle (BEV)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_F9633769835543089EE9B2D33A2B3194'>
+            <properties context=''>
+              <relation connection='hyper.0963ira1r4vfoc15yc5ws1mpd7qc' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Electric Vehicle and Charger Counts By Year Extract (2)' inline='true' name='federated.04c9txa0l5j7da1c6dvve0j8mfgt (copy)' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Electric Vehicle and Charger Counts By Year' name='hyper.1m5fka711xjg701dxyha61orr3wu'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/Dani/Documents/My Tableau Repository/Workbooks/Assignment 7- Dani.twb Files/Data/Downloads/Electric Vehicle and Charger Counts By Year.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.1m5fka711xjg701dxyha61orr3wu' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>18</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_18DC0D80B4DD40F09F0069C3FCFDAB3D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZIP Code]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ZIP Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>606</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_18DC0D80B4DD40F09F0069C3FCFDAB3D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Battery Electric Vehicle (BEV)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Battery Electric Vehicle (BEV)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Battery Electric Vehicle (BEV)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>254</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_18DC0D80B4DD40F09F0069C3FCFDAB3D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Plug-in Hybrid Electric Vehicle (PHEV)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Plug-in Hybrid Electric Vehicle (PHEV)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Plug-in Hybrid Electric Vehicle (PHEV)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>92</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_18DC0D80B4DD40F09F0069C3FCFDAB3D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EV Level1 EVSE Num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EV Level1 EVSE Num]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EV Level1 EVSE Num</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_18DC0D80B4DD40F09F0069C3FCFDAB3D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EV Level2 EVSE Num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EV Level2 EVSE Num]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EV Level2 EVSE Num</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_18DC0D80B4DD40F09F0069C3FCFDAB3D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EV DC Fast Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EV DC Fast Count]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>EV DC Fast Count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>16</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_18DC0D80B4DD40F09F0069C3FCFDAB3D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Charger_count' datatype='integer' name='[Calculation_1590333619168567297]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[EV DC Fast Count]+[EV Level2 EVSE Num]' />
+      </column>
+      <column datatype='string' name='[ZIP Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_18DC0D80B4DD40F09F0069C3FCFDAB3D]' role='measure' type='quantitative' />
+      <group caption='Action (ZIP Code)' hidden='true' name='[Action (ZIP Code)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[ZIP Code]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_18DC0D80B4DD40F09F0069C3FCFDAB3D'>
+            <properties context=''>
+              <relation connection='hyper.1m5fka711xjg701dxyha61orr3wu' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Electric Vehicle Population 20240412 Extract (2)' inline='true' name='federated.1o2zlpp1heetjk1bnmypu11yubth (copy)' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Electric Vehicle Population 20240412' name='hyper.1u7g1eo1copvn119434f810fxt1i'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/Dani/Documents/My Tableau Repository/Workbooks/Assignment 7- Dani.twb Files/Data/Downloads 1/Electric Vehicle Population 20240412.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.1u7g1eo1copvn119434f810fxt1i' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>VIN (1-10)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VIN (1-10)]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>VIN (1-10)</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>17273</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>65</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>697</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1018</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model Year]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Model Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>15</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Make</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Make]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Make</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>84</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>397</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Vehicle Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Electric Vehicle Type]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Electric Vehicle Type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Clean Alternative Fuel Vehicle (CAFV) Eligibility]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Electric Range]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Electric Range</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>258</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Base MSRP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Base MSRP]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Base MSRP</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>56</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Legislative District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Legislative District]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Legislative District</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>49</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOL Vehicle ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DOL Vehicle ID]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DOL Vehicle ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>235198</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1006</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1006</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Utility</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Electric Utility]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Electric Utility</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>34</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 Census Tract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[2020 Census Tract]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>2020 Census Tract</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6765</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <object-id>[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Vehicle Count (PHEV + BEV)' datatype='integer' name='[Calculation_6693756489556398080]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(1)' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Vin (1-10)' datatype='string' name='[VIN (1-10)]' role='dimension' type='nominal' />
+      <column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_764E1CDA0AE24D889F30FD25F36C8D3E'>
+            <properties context=''>
+              <relation connection='hyper.1u7g1eo1copvn119434f810fxt1i' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_9BA0362BED9345D39DAE19541BC80B78]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='EVS per Charging Station' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='EVS per Charging Station'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#666666' fontname='Tiro Bangla' fontsize='9' underline='true'>EVs Per Charger by Zipcode</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric Vehicle and Charger Counts By Year Extract' name='federated.04c9txa0l5j7da1c6dvve0j8mfgt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04c9txa0l5j7da1c6dvve0j8mfgt'>
+            <column datatype='integer' name='[Battery Electric Vehicle (BEV)]' role='measure' type='quantitative' />
+            <column caption='TOTAL Charging stations (level 2+Fast count)' datatype='integer' name='[Calculation_1676113185221160960]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[EV Level2 EVSE Num]+[EV DC Fast Count]' />
+            </column>
+            <column caption='EVS per Charger ' datatype='real' name='[Calculation_1676113185224749057]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Battery Electric Vehicle (BEV)]/ ([Calculation_1676113185221160960]+1)' />
+            </column>
+            <column datatype='integer' name='[EV DC Fast Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[EV Level2 EVSE Num]' role='measure' type='quantitative' />
+            <column datatype='string' name='[ZIP Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+            <column-instance column='[ZIP Code]' derivation='None' name='[none:ZIP Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Battery Electric Vehicle (BEV)]' derivation='Sum' name='[sum:Battery Electric Vehicle (BEV):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1676113185221160960]' derivation='Sum' name='[sum:Calculation_1676113185221160960:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1676113185224749057]' derivation='Sum' name='[sum:Calculation_1676113185224749057:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]'>
+            <groupfilter function='level-members' level='[none:ZIP Code:nk]' />
+          </filter>
+          <filter class='quantitative' column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]' included-values='in-range' />
+          <filter class='quantitative' column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</column>
+            <column>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</column>
+            <column>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]' field-type='quantitative' max='6058551.4381259475' min='6004545.5623536762' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]' field-type='quantitative' max='-13634301.451419765' min='-13844230.909799824' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d2d6e2</color>
+                <color>#b6bdd3</color>
+                <color>#9ca6c4</color>
+                <color>#8490b5</color>
+                <color>#6e7ba7</color>
+                <color>#5a6998</color>
+                <color>#485789</color>
+                <color>#38477a</color>
+                <color>#2a396b</color>
+                <color>#1e2d5d</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]' />
+              <tooltip column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]' />
+              <tooltip column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]' />
+              <text column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]' />
+              <lod column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]' />
+              <lod column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]' />
+              <geometry column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</rows>
+        <cols>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98052&quot;</value>
+                <value>5084</value>
+                <value>77</value>
+                <value>3873.4196428571431</value>
+                <value>&quot;POLYGON((-122.1644 47.7041,-122.163 47.7115,-122.154 47.7114,-122.1493 47.7257,-122.136 47.7316,-122.1254 47.7219,-122.1157 47.7218,-122.1102 47.7254,-122.1113 47.7327,-122.1048 47.7326,-122.0997 47.7289,-122.0941 47.7184,-122.0876 47.7184,-122.0772 47.7177,-122.0838 47.7094,-122.084 47.6956,-122.0866 47.6931,-122.087 47.6822,-122.0817 47.6786,-122.0821 47.6713,-122.0793 47.664,-122.0858 47.662,-122.087 47.6573,-122.0982 47.6484,-122.0842 47.638,-122.0793 47.6275,-122.1109 47.6276,-122.1109 47.6461,-122.1324 47.6327,-122.1373 47.6279,-122.143 47.6315,-122.1434 47.6606,-122.1534 47.6606,-122.1588 47.6606,-122.1628 47.668,-122.1644 47.6854,-122.1539 47.6861,-122.154 47.6914,-122.1646 47.6969,-122.1644 47.7041))&quot;</value>
+                <value>47.681100000000001</value>
+                <value>-122.1203</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98012&quot;</value>
+                <value>3910</value>
+                <value>2</value>
+                <value>3786.0</value>
+                <value>&quot;POLYGON((-122.2339 47.8144,-122.2384 47.8256,-122.2432 47.829,-122.2441 47.8423,-122.2396 47.8422,-122.2358 47.8494,-122.228 47.8671,-122.223 47.871,-122.2231 47.8783,-122.166 47.8778,-122.1751 47.8711,-122.1769 47.8644,-122.1696 47.8652,-122.1692 47.8581,-122.1584 47.858,-122.1584 47.8524,-122.1566 47.8375,-122.1533 47.8342,-122.1563 47.8178,-122.1645 47.8197,-122.1647 47.8085,-122.1822 47.8131,-122.1861 47.8092,-122.1984 47.812,-122.2033 47.8094,-122.2296 47.8093,-122.2339 47.8144))&quot;</value>
+                <value>47.841700000000003</value>
+                <value>-122.1986</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98006&quot;</value>
+                <value>3145</value>
+                <value>14</value>
+                <value>2809.5523809523811</value>
+                <value>&quot;POLYGON((-122.1967 47.5461,-122.1973 47.552,-122.1892 47.5635,-122.1949 47.5712,-122.1892 47.5778,-122.188 47.5792,-122.1721 47.5802,-122.1511 47.5796,-122.1402 47.5791,-122.1318 47.5778,-122.1066 47.5689,-122.0991 47.5649,-122.1005 47.5449,-122.1093 47.5445,-122.1111 47.5361,-122.1167 47.5379,-122.13 47.535,-122.1361 47.5401,-122.1502 47.5445,-122.1643 47.5455,-122.1699 47.5401,-122.1906 47.5421,-122.1967 47.5461))&quot;</value>
+                <value>47.558900000000001</value>
+                <value>-122.1486</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98115&quot;</value>
+                <value>2704</value>
+                <value>10</value>
+                <value>2273.5</value>
+                <value>&quot;POLYGON((-122.3282 47.6719,-122.3259 47.6792,-122.3286 47.6828,-122.3293 47.7014,-122.3285 47.7014,-122.3226 47.7009,-122.273 47.7011,-122.2717 47.6942,-122.2629 47.6877,-122.2562 47.6882,-122.2481 47.6854,-122.2461 47.6809,-122.2541 47.6709,-122.2563 47.6721,-122.303 47.6721,-122.3104 47.674,-122.316 47.6717,-122.3282 47.6719))&quot;</value>
+                <value>47.685600000000001</value>
+                <value>-122.2925</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98075&quot;</value>
+                <value>2325</value>
+                <value>10</value>
+                <value>2101.0</value>
+                <value>&quot;POLYGON((-122.0973 47.5811,-122.0985 47.5919,-122.0965 47.6023,-121.9923 47.6014,-121.9707 47.6011,-121.9708 47.5945,-121.9619 47.5946,-121.9534 47.5844,-121.9663 47.5834,-121.9711 47.5802,-121.9764 47.5875,-121.988 47.5754,-122.0051 47.5806,-122.0219 47.5808,-122.0223 47.5723,-122.0252 47.5669,-122.0245 47.559,-122.0359 47.5627,-122.0357 47.5773,-122.041 47.5774,-122.0492 47.5704,-122.0574 47.5703,-122.0636 47.5656,-122.0719 47.5656,-122.0823 47.5752,-122.0973 47.5811))&quot;</value>
+                <value>47.587000000000003</value>
+                <value>-122.03579999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98059&quot;</value>
+                <value>2206</value>
+                <value>3</value>
+                <value>2132.833333333333</value>
+                <value>&quot;POLYGON((-122.1695 47.4777,-122.1695 47.4859,-122.1642 47.4849,-122.1648 47.5189,-122.1626 47.5238,-122.1644 47.5358,-122.1699 47.5401,-122.1643 47.5455,-122.1502 47.5445,-122.1361 47.5401,-122.13 47.535,-122.125 47.5283,-122.1265 47.5202,-122.1332 47.5162,-122.1008 47.5162,-122.1009 47.5005,-122.0948 47.4929,-122.0863 47.489,-122.0779 47.4807,-122.0582 47.4728,-122.0583 47.4661,-122.0584 47.4542,-122.069 47.4551,-122.0742 47.4553,-122.0743 47.4661,-122.0848 47.4686,-122.0961 47.469,-122.1165 47.4676,-122.1401 47.4717,-122.1522 47.4704,-122.1535 47.474,-122.1615 47.4741,-122.1695 47.4777))&quot;</value>
+                <value>47.4968</value>
+                <value>-122.1255</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98074&quot;</value>
+                <value>2792</value>
+                <value>6</value>
+                <value>2670.6666666666665</value>
+                <value>&quot;POLYGON((-122.0965 47.6023,-122.0924 47.6092,-122.0809 47.6185,-122.0793 47.6275,-122.0842 47.638,-122.0982 47.6484,-122.087 47.6573,-122.0789 47.6558,-122.0789 47.6494,-122.0714 47.6493,-122.0636 47.6543,-122.0558 47.6491,-122.0565 47.644,-122.0477 47.6385,-122.0136 47.6386,-122.003 47.6306,-122.0029 47.6252,-121.9921 47.619,-121.9923 47.6014,-122.0965 47.6023))&quot;</value>
+                <value>47.622799999999998</value>
+                <value>-122.0461</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98033&quot;</value>
+                <value>3262</value>
+                <value>42</value>
+                <value>2544.1666666666665</value>
+                <value>&quot;POLYGON((-122.2123 47.7012,-122.208 47.704,-122.1644 47.7041,-122.1646 47.6969,-122.154 47.6914,-122.1539 47.6861,-122.1644 47.6854,-122.1628 47.668,-122.1588 47.6606,-122.1641 47.6608,-122.1645 47.6462,-122.1855 47.6464,-122.1944 47.6441,-122.2128 47.6424,-122.2108 47.6482,-122.2066 47.6489,-122.2078 47.6684,-122.2059 47.6732,-122.2135 47.6788,-122.2178 47.6916,-122.2123 47.7012))&quot;</value>
+                <value>47.675800000000002</value>
+                <value>-122.18680000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98004&quot;</value>
+                <value>3020</value>
+                <value>241</value>
+                <value>2207.0189223057641</value>
+                <value>&quot;POLYGON((-122.2202 47.6154,-122.2224 47.621,-122.228 47.621,-122.2279 47.6355,-122.2329 47.6394,-122.2228 47.6412,-122.2213 47.6484,-122.2139 47.6528,-122.2108 47.6482,-122.2128 47.6424,-122.1944 47.6441,-122.1855 47.6464,-122.1856 47.6407,-122.1805 47.6372,-122.1843 47.6319,-122.1827 47.6235,-122.1845 47.6086,-122.1887 47.5937,-122.186 47.5878,-122.188 47.5792,-122.1892 47.5778,-122.2034 47.5819,-122.2152 47.6029,-122.2146 47.6088,-122.2202 47.6154))&quot;</value>
+                <value>47.618400000000001</value>
+                <value>-122.2032</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98021&quot;</value>
+                <value>2265</value>
+                <value>8</value>
+                <value>2177.2857142857142</value>
+                <value>&quot;POLYGON((-122.2276 47.7767,-122.267 47.7771,-122.2646 47.7918,-122.2527 47.798,-122.2417 47.8068,-122.2331 47.8075,-122.2339 47.8144,-122.2296 47.8093,-122.2033 47.8094,-122.1984 47.812,-122.1861 47.8092,-122.1822 47.8131,-122.1647 47.8085,-122.1648 47.798,-122.1489 47.7958,-122.1491 47.7905,-122.1581 47.7906,-122.1592 47.7834,-122.1672 47.7828,-122.1694 47.7763,-122.2276 47.7767))&quot;</value>
+                <value>47.792400000000001</value>
+                <value>-122.2085</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98034&quot;</value>
+                <value>2463</value>
+                <value>26</value>
+                <value>2052.5809523809526</value>
+                <value>&quot;POLYGON((-122.2123 47.7012,-122.2191 47.7043,-122.2282 47.6975,-122.2429 47.7003,-122.246 47.7048,-122.2581 47.7148,-122.2617 47.7264,-122.2437 47.7264,-122.2406 47.7334,-122.2185 47.734,-122.1952 47.733,-122.1889 47.7413,-122.1754 47.7371,-122.1756 47.7339,-122.1638 47.734,-122.1593 47.7258,-122.1493 47.7257,-122.154 47.7114,-122.163 47.7115,-122.1644 47.7041,-122.208 47.704,-122.2123 47.7012))&quot;</value>
+                <value>47.718699999999998</value>
+                <value>-122.2052</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{F326859F-EBAB-48A3-934E-0D340B43D3F8}' />
+    </worksheet>
+    <worksheet name='EVS per Charging Station (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>EVs Per Charging Station</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric Vehicle and Charger Counts By Year Extract' name='federated.04c9txa0l5j7da1c6dvve0j8mfgt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04c9txa0l5j7da1c6dvve0j8mfgt'>
+            <column datatype='integer' name='[Battery Electric Vehicle (BEV)]' role='measure' type='quantitative' />
+            <column caption='TOTAL Charging stations (level 2+Fast count)' datatype='integer' name='[Calculation_1676113185221160960]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[EV Level2 EVSE Num]+[EV DC Fast Count]' />
+            </column>
+            <column caption='EVS per Charger ' datatype='real' name='[Calculation_1676113185224749057]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Battery Electric Vehicle (BEV)]/ ([Calculation_1676113185221160960]+1)' />
+            </column>
+            <column datatype='integer' name='[EV DC Fast Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[EV Level2 EVSE Num]' role='measure' type='quantitative' />
+            <column datatype='string' name='[ZIP Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+            <column-instance column='[ZIP Code]' derivation='None' name='[none:ZIP Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Battery Electric Vehicle (BEV)]' derivation='Sum' name='[sum:Battery Electric Vehicle (BEV):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1676113185221160960]' derivation='Sum' name='[sum:Calculation_1676113185221160960:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1676113185224749057]' derivation='Sum' name='[sum:Calculation_1676113185224749057:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]' field-type='quantitative' max='6314487.61107969' min='5694905.3295088233' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]' field-type='quantitative' max='-13037698.922306774' min='-13851060.045199929' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d2d6e2</color>
+                <color>#b6bdd3</color>
+                <color>#9ca6c4</color>
+                <color>#8490b5</color>
+                <color>#6e7ba7</color>
+                <color>#5a6998</color>
+                <color>#485789</color>
+                <color>#38477a</color>
+                <color>#2a396b</color>
+                <color>#1e2d5d</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]' />
+              <tooltip column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]' />
+              <tooltip column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]' />
+              <lod column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]' />
+              <lod column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185224749057:qk]' />
+              <geometry column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</rows>
+        <cols>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{C99D75C2-C80C-48F3-B0FB-F744A439B053}' />
+    </worksheet>
+    <worksheet name='TOTAL BEVS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total BEVs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric Vehicle and Charger Counts By Year Extract' name='federated.04c9txa0l5j7da1c6dvve0j8mfgt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04c9txa0l5j7da1c6dvve0j8mfgt'>
+            <column datatype='integer' name='[Battery Electric Vehicle (BEV)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[ZIP Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+            <column-instance column='[ZIP Code]' derivation='None' name='[none:ZIP Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Battery Electric Vehicle (BEV)]' derivation='Sum' name='[sum:Battery Electric Vehicle (BEV):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]'>
+            <groupfilter function='level-members' level='[none:ZIP Code:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]' field-type='quantitative' max='-13519973.238245161' min='-13667229.910293184' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]' field-type='quantitative' max='6083994.9259641245' min='6025527.0471249241' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d5dae1</color>
+                <color>#bac5d1</color>
+                <color>#a2b1c1</color>
+                <color>#8b9db1</color>
+                <color>#768ba1</color>
+                <color>#627991</color>
+                <color>#516881</color>
+                <color>#415871</color>
+                <color>#324961</color>
+                <color>#263b51</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]' />
+              <lod column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]' />
+              <geometry column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='214' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</rows>
+        <cols>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98012&quot;</value>
+                <value>3910</value>
+                <value>&quot;POLYGON((-122.2339 47.8144,-122.2384 47.8256,-122.2432 47.829,-122.2441 47.8423,-122.2396 47.8422,-122.2358 47.8494,-122.228 47.8671,-122.223 47.871,-122.2231 47.8783,-122.166 47.8778,-122.1751 47.8711,-122.1769 47.8644,-122.1696 47.8652,-122.1692 47.8581,-122.1584 47.858,-122.1584 47.8524,-122.1566 47.8375,-122.1533 47.8342,-122.1563 47.8178,-122.1645 47.8197,-122.1647 47.8085,-122.1822 47.8131,-122.1861 47.8092,-122.1984 47.812,-122.2033 47.8094,-122.2296 47.8093,-122.2339 47.8144))&quot;</value>
+                <value>47.841700000000003</value>
+                <value>-122.1986</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98052&quot;</value>
+                <value>5084</value>
+                <value>&quot;POLYGON((-122.1644 47.7041,-122.163 47.7115,-122.154 47.7114,-122.1493 47.7257,-122.136 47.7316,-122.1254 47.7219,-122.1157 47.7218,-122.1102 47.7254,-122.1113 47.7327,-122.1048 47.7326,-122.0997 47.7289,-122.0941 47.7184,-122.0876 47.7184,-122.0772 47.7177,-122.0838 47.7094,-122.084 47.6956,-122.0866 47.6931,-122.087 47.6822,-122.0817 47.6786,-122.0821 47.6713,-122.0793 47.664,-122.0858 47.662,-122.087 47.6573,-122.0982 47.6484,-122.0842 47.638,-122.0793 47.6275,-122.1109 47.6276,-122.1109 47.6461,-122.1324 47.6327,-122.1373 47.6279,-122.143 47.6315,-122.1434 47.6606,-122.1534 47.6606,-122.1588 47.6606,-122.1628 47.668,-122.1644 47.6854,-122.1539 47.6861,-122.154 47.6914,-122.1646 47.6969,-122.1644 47.7041))&quot;</value>
+                <value>47.681100000000001</value>
+                <value>-122.1203</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98004&quot;</value>
+                <value>3020</value>
+                <value>&quot;POLYGON((-122.2202 47.6154,-122.2224 47.621,-122.228 47.621,-122.2279 47.6355,-122.2329 47.6394,-122.2228 47.6412,-122.2213 47.6484,-122.2139 47.6528,-122.2108 47.6482,-122.2128 47.6424,-122.1944 47.6441,-122.1855 47.6464,-122.1856 47.6407,-122.1805 47.6372,-122.1843 47.6319,-122.1827 47.6235,-122.1845 47.6086,-122.1887 47.5937,-122.186 47.5878,-122.188 47.5792,-122.1892 47.5778,-122.2034 47.5819,-122.2152 47.6029,-122.2146 47.6088,-122.2202 47.6154))&quot;</value>
+                <value>47.618400000000001</value>
+                <value>-122.2032</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{D2748918-B8AF-4113-96F9-BA97EE490EF2}' />
+    </worksheet>
+    <worksheet name='TOTAL CHARGING STATIONS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Charging Stations</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric Vehicle and Charger Counts By Year Extract' name='federated.04c9txa0l5j7da1c6dvve0j8mfgt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04c9txa0l5j7da1c6dvve0j8mfgt'>
+            <column caption='TOTAL Charging stations (level 2+Fast count)' datatype='integer' name='[Calculation_1676113185221160960]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[EV Level2 EVSE Num]+[EV DC Fast Count]' />
+            </column>
+            <column datatype='integer' name='[EV DC Fast Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[EV Level2 EVSE Num]' role='measure' type='quantitative' />
+            <column datatype='string' name='[ZIP Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+            <column-instance column='[ZIP Code]' derivation='None' name='[none:ZIP Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1676113185221160960]' derivation='Sum' name='[sum:Calculation_1676113185221160960:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]' included-values='all' />
+          <slices>
+            <column>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]' field-type='quantitative' max='-13515358.736109741' min='-13655665.806870066' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]' field-type='quantitative' max='6088381.9907544255' min='6013551.5491128732' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d6dce2</color>
+                <color>#bdc9d4</color>
+                <color>#a6b6c6</color>
+                <color>#90a4b8</color>
+                <color>#7c92aa</color>
+                <color>#69829b</color>
+                <color>#58728d</color>
+                <color>#48637f</color>
+                <color>#3a5571</color>
+                <color>#2e4863</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]' />
+              <text column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]' />
+              <lod column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]' />
+              <geometry column='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</rows>
+        <cols>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98052&quot;</value>
+                <value>77</value>
+                <value>&quot;POLYGON((-122.1644 47.7041,-122.163 47.7115,-122.154 47.7114,-122.1493 47.7257,-122.136 47.7316,-122.1254 47.7219,-122.1157 47.7218,-122.1102 47.7254,-122.1113 47.7327,-122.1048 47.7326,-122.0997 47.7289,-122.0941 47.7184,-122.0876 47.7184,-122.0772 47.7177,-122.0838 47.7094,-122.084 47.6956,-122.0866 47.6931,-122.087 47.6822,-122.0817 47.6786,-122.0821 47.6713,-122.0793 47.664,-122.0858 47.662,-122.087 47.6573,-122.0982 47.6484,-122.0842 47.638,-122.0793 47.6275,-122.1109 47.6276,-122.1109 47.6461,-122.1324 47.6327,-122.1373 47.6279,-122.143 47.6315,-122.1434 47.6606,-122.1534 47.6606,-122.1588 47.6606,-122.1628 47.668,-122.1644 47.6854,-122.1539 47.6861,-122.154 47.6914,-122.1646 47.6969,-122.1644 47.7041))&quot;</value>
+                <value>47.681100000000001</value>
+                <value>-122.1203</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98004&quot;</value>
+                <value>241</value>
+                <value>&quot;POLYGON((-122.2202 47.6154,-122.2224 47.621,-122.228 47.621,-122.2279 47.6355,-122.2329 47.6394,-122.2228 47.6412,-122.2213 47.6484,-122.2139 47.6528,-122.2108 47.6482,-122.2128 47.6424,-122.1944 47.6441,-122.1855 47.6464,-122.1856 47.6407,-122.1805 47.6372,-122.1843 47.6319,-122.1827 47.6235,-122.1845 47.6086,-122.1887 47.5937,-122.186 47.5878,-122.188 47.5792,-122.1892 47.5778,-122.2034 47.5819,-122.2152 47.6029,-122.2146 47.6088,-122.2202 47.6154))&quot;</value>
+                <value>47.618400000000001</value>
+                <value>-122.2032</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Geometry (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Latitude (generated)]</field>
+                  <field>[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;98012&quot;</value>
+                <value>2</value>
+                <value>&quot;POLYGON((-122.2339 47.8144,-122.2384 47.8256,-122.2432 47.829,-122.2441 47.8423,-122.2396 47.8422,-122.2358 47.8494,-122.228 47.8671,-122.223 47.871,-122.2231 47.8783,-122.166 47.8778,-122.1751 47.8711,-122.1769 47.8644,-122.1696 47.8652,-122.1692 47.8581,-122.1584 47.858,-122.1584 47.8524,-122.1566 47.8375,-122.1533 47.8342,-122.1563 47.8178,-122.1645 47.8197,-122.1647 47.8085,-122.1822 47.8131,-122.1861 47.8092,-122.1984 47.812,-122.2033 47.8094,-122.2296 47.8093,-122.2339 47.8144))&quot;</value>
+                <value>47.841700000000003</value>
+                <value>-122.1986</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{5CE36F97-FA13-486F-AD3F-CD73CD4A3C00}' />
+    </worksheet>
+    <worksheet name='Vehicle Count'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric Vehicle Population 20240412 Extract (2)' name='federated.1o2zlpp1heetjk1bnmypu11yubth (copy)' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o2zlpp1heetjk1bnmypu11yubth (copy)'>
+            <column caption='Vehicle Count (PHEV + BEV)' datatype='integer' name='[Calculation_6693756489556398080]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(1)' />
+            </column>
+            <column datatype='string' name='[Model Year]' role='dimension' type='nominal' />
+            <column-instance column='[Model Year]' derivation='None' name='[none:Model Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_6693756489556398080]' derivation='User' name='[pcdf:usr:Calculation_6693756489556398080:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Calculation_6693756489556398080]' derivation='User' name='[usr:Calculation_6693756489556398080:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1o2zlpp1heetjk1bnmypu11yubth (copy)].[none:Model Year:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Model Year:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Model Year:nk]' member='&quot;2000&quot;' />
+                <groupfilter function='member' level='[none:Model Year:nk]' member='&quot;2002&quot;' />
+                <groupfilter function='member' level='[none:Model Year:nk]' member='&quot;2003&quot;' />
+                <groupfilter function='member' level='[none:Model Year:nk]' member='&quot;2022&quot;' />
+                <groupfilter function='member' level='[none:Model Year:nk]' member='&quot;2023&quot;' />
+                <groupfilter function='member' level='[none:Model Year:nk]' member='&quot;2024&quot;' />
+                <groupfilter function='member' level='[none:Model Year:nk]' member='&quot;2025&quot;' />
+                <groupfilter function='member' level='[none:Model Year:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1o2zlpp1heetjk1bnmypu11yubth (copy)].[none:Model Year:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1o2zlpp1heetjk1bnmypu11yubth (copy)].[usr:Calculation_6693756489556398080:qk]' field-type='quantitative' max='21846' min='-1189' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='100' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1o2zlpp1heetjk1bnmypu11yubth (copy)].[pcdf:usr:Calculation_6693756489556398080:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1o2zlpp1heetjk1bnmypu11yubth (copy)].[usr:Calculation_6693756489556398080:qk]</rows>
+        <cols>[federated.1o2zlpp1heetjk1bnmypu11yubth (copy)].[none:Model Year:nk]</cols>
+      </table>
+      <simple-id uuid='{B216C828-285B-4400-AAC2-AE2F85224C48}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#555555' fontname='Tiro Bangla'>Washington EV Infrastructure Vs. Adoption</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#555555' fontname='Tiro Bangla' fontsize='9'>Visualizing where electric vehicle growth outpaces charging deployment</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1024' minheight='768' minwidth='1024' preset-index='2' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='28' param='horz' type-v2='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='97916' id='26' type-v2='layout-basic' w='98438' x='781' y='1042'>
+              <zone h='97916' id='24' param='horz' type-v2='layout-flow' w='98438' x='781' y='1042'>
+                <zone h='97916' id='20' type-v2='layout-basic' w='98438' x='781' y='1042'>
+                  <zone h='97916' id='18' param='horz' type-v2='layout-flow' w='98438' x='781' y='1042'>
+                    <zone h='97916' id='16' type-v2='layout-basic' w='98438' x='781' y='1042'>
+                      <zone h='59704' id='12' param='vert' type-v2='layout-flow' w='98438' x='781' y='1042'>
+                        <zone fixed-size='51' h='7683' id='13' is-fixed='true' type-v2='title' w='98438' x='781' y='1042'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone forceUpdate='true' h='2605' id='14' type-v2='text' w='98438' x='781' y='8725'>
+                          <formatted-text>
+                            <run fontcolor='#555555' fontname='Tiro Bangla' underline='true'>EV and Infrastructure Growth Over Time</run>
+                          </formatted-text>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='49416' id='10' param='vert' type-v2='layout-flow' w='98438' x='781' y='11330'>
+                          <zone h='49416' id='8' type-v2='layout-basic' w='98438' x='781' y='11330'>
+                            <zone h='49416' id='3' param='horz' type-v2='layout-flow' w='98438' x='781' y='11330'>
+                              <zone fixed-size='435' h='49416' id='5' is-fixed='true' name='Vehicle Count' w='98438' x='781' y='11330'>
+                                <layout-cache minheight='156' type-h='scalable' type-w='cell' />
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                      <zone h='38212' id='15' name='EVS per Charging Station' w='98438' x='781' y='60746'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#555555' fontname='Tiro Bangla'>Washington EV Infrastructure Vs. Adoption</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#555555' fontname='Tiro Bangla' fontsize='9'>Visualizing where electric vehicle growth outpaces charging deployment</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='31' param='vert' type-v2='layout-flow' w='98438' x='781' y='1042'>
+                <zone fixed-size='51' h='7683' id='13' type-v2='title' w='98438' x='781' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2605' id='14' type-v2='text' w='98438' x='781' y='8725'>
+                  <formatted-text>
+                    <run fontcolor='#555555' fontname='Tiro Bangla' underline='true'>EV and Infrastructure Growth Over Time</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49416' id='5' is-fixed='true' name='Vehicle Count' w='98438' x='781' y='11330'>
+                  <layout-cache minheight='156' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38212' id='15' is-fixed='true' name='EVS per Charging Station' w='98438' x='781' y='60746'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DFD30DE5-5E3D-4693-A402-109C7EC7418C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='worksheet' name='EVS per Charging Station'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{70769E4D-8DE4-415A-9E93-E337956FCD88}' />
+    </window>
+    <window class='worksheet' name='EVS per Charging Station (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[none:ZIP Code:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{7C2712E5-3BEE-4D6C-8E8B-24E7A4CD9A62}' />
+    </window>
+    <window class='worksheet' name='TOTAL BEVS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Battery Electric Vehicle (BEV):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{0408CBEB-3BA9-43BA-82B1-579BADB75515}' />
+    </window>
+    <window class='worksheet' name='TOTAL CHARGING STATIONS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.04c9txa0l5j7da1c6dvve0j8mfgt].[sum:Calculation_1676113185221160960:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{B9E6BF13-6932-4ABD-9157-4564BDD1A7EF}' />
+    </window>
+    <window class='worksheet' name='Vehicle Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A90A69FF-3725-489D-8712-6BB89F5A5A09}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='EVS per Charging Station'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Vehicle Count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{C37C23E7-3A47-4416-82A4-970E5061E166}' />
+    </window>
+  </windows>
+</workbook>
