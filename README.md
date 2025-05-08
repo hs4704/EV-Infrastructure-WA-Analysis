@@ -20,6 +20,12 @@ This project explores the relationship between electric vehicle (EV) adoption an
 ---
 
 ## 📁 Folder Structure
+
+EV-Infrastructure-WA-Analysis/
+├── data/              # Cleaned .hyper files and Tableau Prep workbooks
+├── tableau/           # Tableau workbook containing visualizations and dashboard
+├── visualizations/    # PNG images of final visualizations for quick reference
+├── README.md          # Project overview and instructions
 ---
 
 ## 🔗 Data Sources
@@ -52,3 +58,8 @@ This project explores the relationship between electric vehicle (EV) adoption an
 - Include charging speed/type in future datasets.
 - Expand scope to other states.
 - Analyze time-of-day usage patterns and peak demand.
+
+## Dashboard
+
+You can view the interactive dashboard on Tableau Public here:  
+[![View Dashboard](https://img.shields.io/badge/View-Dashboard-blue?style=for-the-badge)](https://public.tableau.com/views/EV-and-charger-map/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
