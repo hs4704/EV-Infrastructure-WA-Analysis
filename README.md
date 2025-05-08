@@ -21,11 +21,14 @@ This project explores the relationship between electric vehicle (EV) adoption an
 
 ## 📁 Folder Structure
 
+```
 EV-Infrastructure-WA-Analysis/
 ├── data/              # Cleaned .hyper files and Tableau Prep workbooks
 ├── tableau/           # Tableau workbook containing visualizations and dashboard
 ├── visualizations/    # PNG images of final visualizations for quick reference
 ├── README.md          # Project overview and instructions
+```
+
 ---
 
 ## 🔗 Data Sources
